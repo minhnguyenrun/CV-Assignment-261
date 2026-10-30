@@ -1,0 +1,56 @@
+{
+  "source": "Input/anh_nhan_vat.jpg",
+  "background": "Input/nen.jpg",
+  "target_height": 163,
+  "target_person_height": 120,
+  "paste_xy": [
+    80,
+    201
+  ],
+  "mask_margin_pixels": 4,
+  "screened_color_weight": 0.02,
+  "metrics": {
+    "Ghép trực tiếp": {
+      "boundary_rgb_jump": 100.50118623962041,
+      "interior_gradient_mae": 0.0
+    },
+    "Poisson tự viết": {
+      "boundary_rgb_jump": 6.5587188612099645,
+      "interior_gradient_mae": 8.099684526914574
+    },
+    "Screened Poisson (λ=0.02)": {
+      "boundary_rgb_jump": 11.723013048635824,
+      "interior_gradient_mae": 3.808679235909283
+    },
+    "OpenCV NORMAL_CLONE": {
+      "boundary_rgb_jump": 4.958481613285883,
+      "interior_gradient_mae": 8.014432272648236
+    }
+  },
+  "poisson_solver": {
+    "unknowns": 6850,
+    "nonzeros": 33688,
+    "relative_residual": 1.6094094778576306e-15,
+    "clipped_channel_percent": 40.47201946472019,
+    "seconds": 0.06770809999943594
+  },
+  "screened_solver": {
+    "unknowns": 6850,
+    "nonzeros": 33688,
+    "relative_residual": 1.2440181671858316e-15,
+    "clipped_channel_percent": 6.399026763990268,
+    "seconds": 0.0562699000001885
+  },
+  "identity_relative_residual": 1.5415612516695868e-15,
+  "opencv_comparison": {
+    "version": "4.11.0",
+    "mode": "NORMAL_CLONE",
+    "center_xy": [
+      123,
+      284
+    ],
+    "mask_rgb_mae": 8.956836982968369,
+    "mask_rgb_max_difference": 170.0,
+    "seconds": 0.04144510000151058
+  }
+}
